@@ -65,7 +65,7 @@ body{
      font-family: var(--main-font);
      flex-direction: column;
      height: 100%;
-     background-color: var(--midnight-green);
+     background-color: var(--white-color);
      color: var(--white-color);
 }
 
@@ -87,4 +87,219 @@ img{
 /* Main content  */
 .main-content{
      flex-grow: 1;
+}
+
+
+.main-section {
+     /* background-color: var(--midnight-green); */
+}
+
+.main-header {
+     background-color: var(--midnight-green);
+}
+.navbar {
+     display: flex;
+     margin: 0;
+     padding: 0;
+     padding-top: 73px;
+}
+.navbar-list:nth-child(2){
+     margin-right: 40px;
+}
+
+.navbar-list:nth-child(3){
+     margin-right: auto;
+}
+.navbar-list {
+     list-style: none;
+     display: flex;
+     align-items: center;
+     margin: 0;
+     padding: 0;
+     text-align: center;
+}
+.navbar-list-logo{
+     margin-right: 80px;
+     align-items: center;
+     display: flex;
+}
+.navbar-logo-img{
+     width: 160px;
+     height: 40px;
+}
+.navbar-list-link {
+     color: var(--white-color);
+     text-decoration: none;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 28px;
+     text-align: center;
+}
+.navbar-list-btn{
+     margin-left: 20px;
+     color: var(--white-color);
+     text-decoration: none;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 28px;
+     border: 2px solid var(--white-color);
+     border-radius: 24px;
+     padding: 9px 33px 11px 32px ;
+}
+.header-section {
+     margin-top: 129px;
+     display: flex;
+     align-items: end;
+     padding-bottom: 250px;
+     position: relative;
+}
+.header-section::before{
+     position: absolute;
+     width: 200px;
+     height: 200px;
+     content: "";
+     background-image: url("/images/hero-circle-dark.svg");
+     left: -265px;
+     transform: rotate(0.01deg);
+
+}
+
+.header-section::after{
+     position: absolute;
+     width: 358px;
+     height: 200px;
+     content: "";
+     background-image: url("/images/hero-circle-red.svg");
+     background-repeat: repeat;
+     left: 68%;
+     top: 80%;
+     z-index: 1;
+}
+.header-section-heaading {
+     margin: 0;
+     padding: 0;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 100px;
+     line-height: 100px;
+     margin-right: auto;
+}
+.header-span {
+     color: var(--light-coral);
+     margin: 0;
+     padding: 0;
+}
+
+.header-section-text {
+     margin: 0;
+     padding: 0;
+     width: 445px;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 28px;
+     display: flex;
+     position: relative;
+}
+.header-section-text::before{
+
+     content: "";
+     width: 50px;
+     height: 4px;
+     background-color: var(--rapture-blue);
+     position: absolute;
+     top: -80%;
+
+}
+
+
+/* INFO_SECTION  */
+
+.info-section {
+     margin: 0;
+     padding: 0;
+}
+.info-section-inner {
+     position: relative;
+     background-color: var(--Sacramento-Green);
+     padding-top: 198px;
+     z-index: 5;
+
+}
+.info-section-wrapper{
+     margin: 0;
+     padding: 0;
+     display: flex;
+
+}
+.info-section-heading {
+     margin: 0;
+     padding: 0;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 48px;
+     line-height: 48px;
+     width: 445px;
+}
+.info-section-extra {
+     display: flex;
+}
+.info-section-extra-inner {
+}
+.info-section-extra-inner-img {
+}
+.info-text-wrapper {
+}
+.info-text-heading {
+}
+.info-text {
+}
+.success-stories-section {
+}
+.success-heading {
+}
+.success-stories-info {
+}
+.success-stories-inner {
+}
+.success-stories-text {
+}
+.success-story-names {
+}
+.success-story-position {
+}
+.success-story-img {
+}
+.contact-section {
+}
+.contact-section-wrapper {
+}
+.contact-heading {
+}
+.contact-btn {
+}
+.footer-section {
+}
+.footer-section-wrapper {
+}
+.setion-footer {
+}
+.footer-list-logo {
+}
+.footer-list-link {
+}
+.footer-adress {
+}
+.footer-socials {
+}
+.footer-socials-ul {
+}
+.footer-socials-list {
+}
+.footer-socials-link {
+}
+.footer-socials-img {
+}
+.copyrights {
 }
