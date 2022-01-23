@@ -604,7 +604,7 @@ img{
      background-image: url("/images/about-hero-circle.svg");
      background-repeat: no-repeat;
      position: absolute;
-     bottom: -100px;
+     bottom: 1px;
      right: -265px;
      z-index: 1;
 }
@@ -646,7 +646,6 @@ img{
 .container {
 }
 .about-directors-wrapper {
-     z-index: 5;
      position: relative;
 }
 .directors-heading {
@@ -664,6 +663,29 @@ img{
      display: flex;
      flex-direction: column;
      padding-bottom: 140px;
+     position: relative;
+}
+
+/* Directors Decoration top */
+.directors-box-wrapper::before{
+     content: "";
+     width: 200px;
+     height: 200px;
+     background-image: url("/images/directors-circle.svg");
+     background-repeat: no-repeat;
+     position: absolute;
+     top: -35%;
+     left: -265px;
+}
+.directors-box-wrapper::after{
+     content: "";
+     width: 200px;
+     height: 200px;
+     background-image: url("/images/directors-rect.svg");
+     background-repeat: no-repeat;
+     position: absolute;
+     right: -218px;
+     bottom: -100px;
 }
 .directors-box-wrapper-top {
      display: flex;
@@ -785,20 +807,25 @@ img{
      opacity: 0.8;
 }
 .clients-section {
+
 }
 .clients-section-wrapper {
+     background-color:var(--Sacramento-Green);
+     padding-top: 140px;
+     padding-bottom: 140px;
 }
 .clients-heading {
+     margin: 0;
+     padding: 0;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 48px;
+     line-height: 48px;
+     text-align: center;
+     margin-bottom: 80px;
 }
 .clients-inner {
-}
-.clients-verge-img {
-}
-.clients-jakarta-img {
-}
-.clients-guardian-img {
-}
-.clients-techradar-img {
-}
-.clients-gadgets-img {
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
 }
