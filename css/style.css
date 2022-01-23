@@ -663,6 +663,7 @@ img{
 .directors-box-wrapper {
      display: flex;
      flex-direction: column;
+     padding-bottom: 140px;
 }
 .directors-box-wrapper-top {
      display: flex;
@@ -675,6 +676,8 @@ img{
      flex-direction: column;
      align-items: center;
      justify-content: center;
+     position: relative;
+     padding-bottom: 56px;
 
 }
 .directors-box:not(:last-child){
@@ -687,6 +690,17 @@ img{
      border: 2px solid var(--border-radius-color);
      border-radius: 50%;
 }
+
+/* Last box  */
+#last-box-name{
+     padding-top: 20px;
+}
+
+
+.last-box{
+     background-color:var(--dark-green);
+}
+
 .directors-name {
      margin: 0;
      padding: 0;
@@ -701,17 +715,74 @@ img{
 .directors-position {
      margin: 0;
      padding: 0;
+     font-style: italic;
+     font-weight: 500;
+     font-size: 15px;
+     line-height: 25px;
+     text-align: center;
+     color:var(--white-color);
 }
 .directors-decorstion {
+     width: 56px;
+     height: 56px;
+     background-color:var(--light-coral);
+     border-radius: 50%;
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     position: absolute;
+     bottom: -27px;
+     cursor: pointer;
+}
+.directors-decorstion:hover{
+     background-color:var(--rapture-blue);
+}
+.decoration-img{
+     width: 16px;
+     height: 16px;
 }
 .directors-box-wrapper-bottom {
      display: flex;
 }
 .directors-logan {
+     width: 254px;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 15px;
+     line-height: 25px;
+     text-align: center;
+}
+.director-box-socials{
+     display: flex;
 }
 .icon-twitter {
+     color:var(--white-color);
+     margin-right: 16px;
 }
 .icon-linkedin {
+     color:var(--white-color);
+}
+
+#direction-last-decoration{
+     background-color:var(--rapture-blue);
+}
+#direction-last-decoration:hover{
+     background-color:var(--light-coral);
+}
+/* hover effects  */
+.icon-twitter:hover{
+     color:var(--light-coral);
+}
+.icon-linkedin:hover{
+     color:var(--light-coral);
+}
+.icon-twitter:active{
+     color:var(--light-coral);
+     opacity: 0.8;
+}
+.icon-linkedin:active{
+     color:var(--light-coral);
+     opacity: 0.8;
 }
 .clients-section {
 }
