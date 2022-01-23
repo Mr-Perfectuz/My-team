@@ -551,6 +551,8 @@ img{
      line-height: 25px;
      margin-right: auto;
 }
+
+/* SOCIALS  */
 .footer-socials {
 }
 .footer-socials-ul {
@@ -570,6 +572,10 @@ img{
 .footer-socials-link:hover {
      color:var(--light-coral);
 }
+.footer-socials-link:active {
+     color:var(--light-coral);
+     opacity: 0.8;
+}
 .footer-socials-img {
      width: 24px;
      height: 24px;
@@ -578,4 +584,150 @@ img{
      margin: 0;
      padding: 0;
      margin-top: 51px;
+}
+
+
+/* About Page  */
+.navbar-about {
+     padding-bottom: 120px;
+     padding-top: 120px;
+     display: flex;
+     justify-content: space-between;
+     position: relative;
+}
+
+/* Navbar Decorations */
+.navbar-about::before{
+     content: "";
+     width: 200px;
+     height: 200px;
+     background-image: url("/images/about-hero-circle.svg");
+     background-repeat: no-repeat;
+     position: absolute;
+     bottom: -100px;
+     right: -265px;
+     z-index: 1;
+}
+
+.navbar-about::after{
+     content: "";
+     width: 50px;
+     height: 4px;
+     background-color: var(--light-coral);
+     position: absolute;
+     top: 84px;
+     left: 380px;
+
+}
+.navbar-about-heading {
+     margin: 0;
+     padding: 0;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 64px;
+     line-height: 100px;
+}
+.navbar-about-text {
+     width: 730px;
+     margin: 0;
+     padding: 0;
+     font-style: normal;
+     font-weight: 600;
+     font-size: 18px;
+     line-height: 28px;
+}
+
+/* Directors-Section  */
+.directors-section {
+     background-color: var(--deep-jungle-green);
+     z-index: 5;
+     position: relative;
+}
+.container {
+}
+.about-directors-wrapper {
+     z-index: 5;
+     position: relative;
+}
+.directors-heading {
+     margin: 0;
+     padding: 0;
+     padding-top: 140px;
+     padding-bottom: 64px;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 48px;
+     line-height: 48px;
+     text-align: center;
+}
+.directors-box-wrapper {
+     display: flex;
+     flex-direction: column;
+}
+.directors-box-wrapper-top {
+     display: flex;
+     margin-bottom: 76px;
+}
+.directors-box {
+     width: 350px;
+     background-color: var(--Sacramento-Green);
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+
+}
+.directors-box:not(:last-child){
+     margin-right: 30px;
+}
+.directors-box-img {
+     margin-top: 32px;
+     width: 96px;
+     height: 96px;
+     border: 2px solid var(--border-radius-color);
+     border-radius: 50%;
+}
+.directors-name {
+     margin: 0;
+     padding: 0;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 18px;
+     line-height: 28px;
+     text-align: center;
+     color:var(--rapture-blue);
+     margin-top: 16px;
+}
+.directors-position {
+     margin: 0;
+     padding: 0;
+}
+.directors-decorstion {
+}
+.directors-box-wrapper-bottom {
+     display: flex;
+}
+.directors-logan {
+}
+.icon-twitter {
+}
+.icon-linkedin {
+}
+.clients-section {
+}
+.clients-section-wrapper {
+}
+.clients-heading {
+}
+.clients-inner {
+}
+.clients-verge-img {
+}
+.clients-jakarta-img {
+}
+.clients-guardian-img {
+}
+.clients-techradar-img {
+}
+.clients-gadgets-img {
 }
