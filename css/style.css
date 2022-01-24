@@ -884,6 +884,7 @@ img{
      display: flex;
      justify-content: space-between;
      padding-bottom: 120px;
+     position: relative;
 }
 
 .contact-info {
@@ -1043,4 +1044,27 @@ input::placeholder{
      background-color:var(--light-coral);
      color:var(--white-color);
      opacity: 0.8;
+}
+
+/* Contact decorations  */
+.contact-page-wrapper::before{
+     position: absolute;
+     content: "";
+     width: 200px;
+     height: 200px;
+     background-image: url(/images/directors-circle.svg);
+     background-repeat:no-repeat;
+     left: -100px;
+     top: -5px;
+}
+
+.contact-page-wrapper::after{
+     position: absolute;
+     content: "";
+     width: 300px;
+     height: 300px;
+     background-image: url(/images/about-circle.svg);
+     background-repeat:no-repeat;
+     right: -197px;
+     bottom: -74px;
 }
